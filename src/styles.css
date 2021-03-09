@@ -1,0 +1,53 @@
+/* You can add global styles to this file, and also import other style files */
+.flex_row {
+    display: flex;
+    flex-direction: row;
+ }
+ .flex_column{
+     display: flex;
+     flex-direction: column;
+ }
+ .align_center {
+     align-items: center;
+ }
+ .justify_center { 
+     justify-content: center;
+ }
+ .justify_space { 
+     justify-content: space-between;
+ }
+ 
+ .header {
+     width: 100%;
+     height: 50px;
+     background-color: white;
+     border-bottom: 0.5px solid grey;
+ }
+ .main { 
+     flex: 1;
+     flex-grow: 1;
+     flex-basis: 0px;
+     height:100% ;
+     background-color: white;
+
+ }
+ .left-panel { 
+    height: 100vh;
+    width: 100px;
+    background-color: black;
+    padding-top: 50px;
+
+ }
+ .body-cont { 
+     flex-grow: 1;
+ }
+ .padding_h_15{
+    padding-left: 15px;
+    padding-right: 15px;
+  
+  }
+  .padding_v_5{
+    padding-bottom: 5px;
+    padding-top: 5px;
+  
+  }

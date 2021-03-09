@@ -1,0 +1,33 @@
+<div class="ui container">
+  <div class="ui grid">
+    <div class="ten wide column">
+        <img src="../../assets/icons/Group 235.png" width="80%" alt="" srcset="">
+    </div>
+    <div class="six wide column ptop10p">
+        <img src="../../assets/logo.png" width="180px">
+        <h3 class="login_head">Welcome</h3>
+      <form class="ui form" [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+        <div class="field">
+          <input type="text" name="emailAddress" [(ngModel)]="emailAddress" class="login_shadow" placeholder="Email Address" formControlName="emailAddress" required />
+        </div>
+        <div class="field">
+          <input type="text" name="password" [(ngModel)]="password" class="login_shadow" placeholder="Password"  formControlName="password" required/>
+        </div>
+        <div class="fields">
+          <div class="eight wide field">
+            <div class="ui checkbox">
+              <input type="checkbox" tabindex="0" class="hidden" />
+              <label>Remember me</label>
+            </div>
+          </div>
+          <div class="eight wide field right floated">
+              <div class="right">
+                <label>Forgot password ?</label>
+              </div>
+          </div>
+        </div>
+        <button class="ui button positive  right" type="submit" [disabled]="!loginForm.valid">Login  <i class="sign in alternate icon"></i></button>
+      </form>
+    </div>
+  </div>
+</div>

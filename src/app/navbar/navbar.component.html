@@ -1,0 +1,18 @@
+<div class="flex_column nav-container">
+    <div class="flex_row main">
+        <div class=" flex_column left-panel align_center">
+            <img class="panel_image" src="../../assets/dashboard.svg"/>
+            <img class="panel_image" src="../../assets/Group1.svg"/>
+            <img class="panel_image" src="../../assets/Group2.svg"/>
+            <img class="panel_image" src="../../assets/settings.svg"/>
+            <img class="panel_image" src="../../assets/user.svg"/>
+            <img (click) = 'logout()' class="panel_image" src="../../assets/logout.svg"/>
+        </div>
+        <div class="body-cont">
+            <div class='margin-fifty'>
+            <router-outlet>
+            </router-outlet>
+        </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,18 @@
+.right{
+    float: right;
+}
+.ptop10p{
+    padding-top: 10% !important;
+}
+
+.login_shadow{
+    border: none !important;
+    box-shadow: -2px 5px 2px 0px #8d8b8ba6 !important;
+}
+
+.login_head{
+    font-size: xx-large;
+    font-family: monospace;
+    border-top: 5px solid #00cd4e;
+    width: 10%;
+}

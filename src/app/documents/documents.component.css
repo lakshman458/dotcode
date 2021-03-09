@@ -1,0 +1,34 @@
+.flex_wrap {
+  flex-wrap: wrap;
+}
+.card-item {
+  background-color: white;
+  width: 70%;
+  margin: 30px;
+  padding: 15px;
+  border: 1px solid grey;
+}
+.text-key {
+  font-size: 16px;
+  color: grey;
+  padding: 5px;
+  text-overflow: ellipsis;
+}
+.text-value {
+  font-size: 16px;
+  color: black;
+  font-weight: bold;
+  padding: 5px;
+  text-overflow: ellipsis;
+}
+.list {
+  padding: 8px;
+  width: 100%;
+  width: 25%;
+}
+.filter_1 {
+  border: 0.5px solid grey;
+  width: max-content;
+  background-color: white;
+  padding: 5px;
+}

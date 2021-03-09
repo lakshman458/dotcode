@@ -1,0 +1,24 @@
+<div class="flex_column">
+  <div class=" flex_row header align_center  padding_h_15 ">
+    <div  class="flex_row align_center  filter_1">
+     <select  (change)="onSelect($event.target.value)" class="padding_h_15" style="border: 0px;">
+       <option value="{{option.key}}"  *ngFor = 'let option of filterValues' class="padding_h_15"> {{ option.label}}</option>
+     </select>
+  </div>
+  <div style="margin-left: 15px;">
+    <input  (keyup)="onChangeSearchInput($event)" class=" padding_h_15 padding_v_5 " placeholder="Filter"/>
+  </div>
+  <div style="margin-left: 15px;">
+    <button (click) = "onSearch($event)" class="padding_h_15 padding_v_5"  name="Search"> Search </button>
+  </div>
+</div>
+  <p *ngIf = 'this.loading'> Loading...</p>
+  <div  *ngIf = '!this.loading' class="flex_column">
+    <div style="cursor: pointer;" (click) = "goToDetails(indexOfelement)" *ngFor="let document of this.documents; let indexOfelement=index;" class="flex_row flex_wrap card-item">
+      <div class="flex_column list" *ngFor="let list of document.list">
+        <label class="text-key">{{ list.label }}</label>
+        <label class="text-value">{{ list.value }}</label>
+      </div>
+    </div>
+  </div>
+</div>

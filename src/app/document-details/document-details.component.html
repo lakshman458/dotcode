@@ -1,0 +1,23 @@
+ <p *ngIf = 'this.loading'> Loading...</p>
+ <p *ngIf = '!this.loading && !this.document'> Something went wrong</p>
+  <div  *ngIf = '!this.loading && !!this.document' class="flex_column">
+  <div class="flex_row header align_center padding_h_15">
+    <label style="margin-right: 50px" class="flex_row align_center filter_1">
+      {{ this.document.firstName }}</label
+    >
+    <div style="flex-grow: 1" class="flex_row justify_center">
+      <label class="padding_h_15">Document ID </label>
+      <label class="flex_row align_center filter_1">
+        {{ this.document.Document_ID }}</label
+      >
+    </div>
+  </div>
+  <div class="flex_column align_center padding_v_5">
+      <h1>Image Front </h1>
+     <img class = 'front_image' src="{{this.document.ID_Card_Front}}"/>
+     <h1>Live Photo Check </h1>
+     <div class="flex_row flex_wrap thumb_list">
+       <img  class="thumbnails" *ngFor = "let img of this.document.LiveCheck_Photos" src="{{imageURL}}{{ img }}"/>
+     </div>
+  </div>
+</div>
